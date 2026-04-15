@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Trends</title>
+</head>
+
+<body>
+
+<h1>Trending Topics</h1>
+
+{% for trend in trends %}
+
+<div style="border:1px solid #ddd;padding:10px;margin:10px">
+
+<b>{{trend.platform}}</b>
+
+<p>{{trend.text}}</p>
+
+</div>
+
+{% endfor %}
+
+</body>
+
+</html>
